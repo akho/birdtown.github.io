@@ -252,9 +252,12 @@ const TextNodes = [
     },
     {id:15,
         text: async () => {
-            const response = await fetch("https://birdtown-visit-counter.akho.name/visits");
+            const response = await fetch("https://birdtown-visit-counter.akho.name/visits", {
+                method: 'POST',
+                body: JSON.stringify("game_over_1"),
+            });
             const json = await response.json();
-            return 'Реджи вернулся к своим родителям, отказавшись от мечты покорить Птицбург!';
+            return 'Реджи вернулся к своим родителям, отказавшись от мечты покорить Птицбург! Вы "${json.json}" птичка на этом Game Over!';
         },
         image: 'location00.jpg',
         player_image: 'player0.png',
