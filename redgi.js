@@ -447,7 +447,7 @@ const TextNodes = [
         player_image: 'player14.png',   
         options: [
             {
-                text: async () => 'Тихо прошептать в ответ "Матрицы"',
+                text: async () => 'Тихо прошептать в ответ "Rust"',
                 nextText: 29
           
             }
