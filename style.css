@@ -19,6 +19,8 @@
     position: center */
     object-fit: cover;
     object-position: 0 -100%;
+    display:flex;
+    align-items:center;
  }
 
 body {
@@ -83,7 +85,20 @@ body {
     /* position: center */
  }
 
+ @media (orientation: landscape) {
+    body {
+      flex-direction: row;
+    }
+  }
+  
+  @media (orientation: portrait) {
+    body {
+      flex-direction: column;
+    }
+  }
+
  @media (max-width: 480px) {
+
 
 }
 
