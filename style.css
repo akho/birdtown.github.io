@@ -69,14 +69,6 @@ body {
     overflow: hidden;
  }
 
-/* Minimum aspect ratio */
-@media (min-aspect-ratio: 20/9) {
-  .bg-image {
-    height: 100vh;
-    width: calc((20/9)*100vh);
-    overflow: hidden;
-}
- }
 
 
 
