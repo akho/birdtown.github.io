@@ -8,9 +8,7 @@
     display:flex;
     width: 100vw;
     height: auto;
-    max-height: 100%;
     object-fit: cover;
-    background-size: 100% 100%;
     overflow: hidden;
     align-items: center;
     justify-content: center;
@@ -85,7 +83,6 @@ body {
     z-index: -1;
     width: 100vw;
     height:auto;
-    max-height: 100%;
     object-fit: cover;
     overflow: hidden;
 
