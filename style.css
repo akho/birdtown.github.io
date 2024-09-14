@@ -88,7 +88,6 @@ body {
  /* Minimum aspect ratio */
 @media (min-aspect-ratio: 16/9) {
   .bg-image {
-    margin: -72px 0px -72px -120px;
     height: 100vh;
     width: calc((16/9)*100vh);
 }
