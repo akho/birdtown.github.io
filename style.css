@@ -16,14 +16,13 @@
     bottom: 0px; */
     /* height: 100vh;
     width:  100vw;  */
-    /* height: 250px; */
     position: center;
     /* object-fit: cover; */
     /* object-position: 0 -100%; */
     display:flex;
     width: 100%;
     height:auto;
-    /* align-items:center; */
+    align-items:center;
  }
 
 body {
@@ -78,48 +77,13 @@ body {
 }
 
 .player-img {
-    height: 300px;
+    height: 350px;
     float: left;
     background-color: transparent;
-    margin: -175px 0 0 -100px;
+    margin: -175px 0 0 -150px;
     overflow: hidden;
-
-    /* position: center */
  }
 
- /* Minimum aspect ratio */
-/* @media (min-aspect-ratio: 16/9) {
-  .bg-image {
-    height: 100vh;
-    width: calc((16/9)*100vh);
-}
- }
-  */
- /* Maximum aspect ratio */
- /* @media (max-aspect-ratio: 8/5) {
-  .bg-image {
-    height: 100vh;
-    width: calc((16/9)*100vh);
-}
- } */
 
 
- /* @media (orientation: landscape) {
-  body {
-    flex-direction: row;
-  }
 
-  .bg-image {
-    flex-direction: row;
-  }
-} */
-
-/* @media (orientation: portrait) {
-  body {
-    flex-direction: column;
-  }
-
-  .bg-image {
-    flex-direction: column;
-  }
-} */
