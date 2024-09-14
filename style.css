@@ -69,10 +69,11 @@ body {
  }
 
  /* Minimum aspect ratio */
- @media (min-aspect-ratio: 20/9) {
+ @media (min-aspect-ratio: 19/9) {
   .bg-image {
     height: 100vh;
-    width: calc((20/9)*100vh);
+    width: calc((19/9)*100vh);
+    max-width: 100%;
     object-fit: cover;
 }
  }
