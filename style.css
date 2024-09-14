@@ -14,7 +14,7 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: flex-end;
     width: 100vw;
     height: 100vh;
@@ -24,6 +24,7 @@ body {
 
 .container {
     width: auto;
+    justify-content: center;
     max-width: 80%;
     background-color: hsla(0, 0%, 96%, 0.815);
     padding: 5px;
@@ -66,6 +67,11 @@ body {
     overflow: hidden;
  }
 
-
-
+ /* Minimum aspect ratio */
+ @media (min-aspect-ratio: 16/9) {
+  .bg-image {
+    height: 100vh;
+    width: calc((16/9)*100vh);
+}
+ }
 
