@@ -17,8 +17,8 @@
     /* height: 100vh;
     width:  100vw;  */
     /* height: 250px; */
-    /* position: center;
-    object-fit: cover; */
+    /* position: center; */
+    /* object-fit: cover; */
     /* object-position: 0 -100%; */
     display:flex;
     /* align-items:center; */
@@ -88,6 +88,7 @@ body {
  /* Minimum aspect ratio */
 @media (min-aspect-ratio: 16/9) {
   .bg-image {
+    margin: -72px 0px -72px -120px;
     height: 100vh;
     width: calc((16/9)*100vh);
 }
@@ -97,7 +98,7 @@ body {
  @media (max-aspect-ratio: 8/5) {
   .bg-image {
     height: 100vh;
-    width: calc((16/9)*100vh);
+    width: calc((8/5)*100vh);
 }
  }
 
