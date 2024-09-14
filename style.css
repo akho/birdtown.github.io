@@ -94,10 +94,17 @@ body {
  }
  
  /* Maximum aspect ratio */
- @media (max-aspect-ratio: 8/5) {
+ /* @media (max-aspect-ratio: 8/5) {
   .bg-image {
     height: 100vh;
     width: calc((8/5)*100vh);
+}
+ } */
+
+ @media (max-aspect-ratio: 9/16) {
+  .bg-image {
+    height: 100vh;
+    width: calc((9/16)*100vh);
 }
  }
 
