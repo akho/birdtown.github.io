@@ -7,7 +7,7 @@
     z-index: -1;
     display:flex;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     object-fit: cover;
     overflow: hidden;
     align-items: center;
@@ -81,7 +81,7 @@ body {
     position: absolute;
     z-index: -1;
     width: 100vw;
-    height:100vh;
+    height:auto;
     object-fit: cover;
     overflow: hidden;
 
