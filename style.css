@@ -17,11 +17,11 @@
     /* height: 100vh;
     width:  100vw;  */
     /* height: 250px; */
-    /* position: center; */
+    position: center;
     /* object-fit: cover; */
     /* object-position: 0 -100%; */
     display:flex;
-    width: 100vw;
+    width: 100%;
     height:auto;
     /* align-items:center; */
  }
@@ -104,7 +104,7 @@ body {
  } */
 
 
- @media (orientation: landscape) {
+ /* @media (orientation: landscape) {
   body {
     flex-direction: row;
   }
@@ -112,7 +112,7 @@ body {
   .bg-image {
     flex-direction: row;
   }
-}
+} */
 
 /* @media (orientation: portrait) {
   body {
