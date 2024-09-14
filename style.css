@@ -6,7 +6,7 @@
     position: absolute;
     z-index: -1;
     display:flex;
-    width: 100%;
+    width: 100vw;
     height:auto;
     object-fit: cover;
     overflow: hidden;
@@ -69,6 +69,21 @@ body {
     overflow: hidden;
  }
 
+ @media (orientation: landscape) {
+  body {
+    flex-direction: row;
+  }
 
+  .bg-image {
+    flex-direction: row;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height:auto;
+    object-fit: cover;
+    overflow: hidden;
+
+  }
+} 
 
 
