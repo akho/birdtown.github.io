@@ -84,3 +84,39 @@ body {
 
     /* position: center */
  }
+
+ /* Minimum aspect ratio */
+@media (min-aspect-ratio: 16/9) {
+  .bg-image {
+    height: 100vh;
+    width: calc((16/9)*100vh);
+}
+ }
+ 
+ /* Maximum aspect ratio */
+ @media (max-aspect-ratio: 8/5) {
+  .bg-image {
+    height: 100vh;
+    width: calc((16/9)*100vh);
+}
+ }
+
+ @media (orientation: landscape) {
+  body {
+    flex-direction: row;
+  }
+
+  .bg-image {
+    flex-direction: row;
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
+
+  .bg-image {
+    flex-direction: row;
+  }
+}
