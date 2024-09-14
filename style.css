@@ -69,14 +69,14 @@ body {
     overflow: hidden;
  }
 
-
- @media (orientation: landscape) {
-  body {
-    flex-direction: row;
-  }
-
+/* Minimum aspect ratio */
+@media (min-aspect-ratio: 20/9) {
   .bg-image {
-    flex-direction: row;
+    height: 100vh;
+    width: calc((20/9)*100vh);
     overflow: hidden;
-  }
 }
+ }
+
+
+
