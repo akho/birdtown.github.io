@@ -256,7 +256,7 @@ const TextNodes = [
     },
     {id:15,
         text: async () => {
-            const response = await fetch("https://birdtown-visit-counter.akho.name/visits", {
+            const response = await fetch("https://birdtown-studios.akho.name/visits", {
                 method: 'POST',
                 body: JSON.stringify("game_over_1"),
             });
@@ -1029,7 +1029,7 @@ const TextNodes = [
     }, 
     {id:68,
         text: async () => {
-            const response = await fetch("https://birdtown-visit-counter.akho.name/visits", {
+            const response = await fetch("https://birdtown-studios.akho.name/visits", {
                 method: 'POST',
                 body: JSON.stringify("game_over_2"),
             });
@@ -1047,7 +1047,7 @@ const TextNodes = [
     },
     {id:69,
         text: async () => {
-            const response = await fetch("https://birdtown-visit-counter.akho.name/visits", {
+            const response = await fetch("https://birdtown-studios.akho.name/visits", {
                 method: 'POST',
                 body: JSON.stringify("game_over_3"),
             });
@@ -1065,7 +1065,7 @@ const TextNodes = [
     },
     {id:70,
         text: async () => {
-            const response = await fetch("https://birdtown-visit-counter.akho.name/visits", {
+            const response = await fetch("https://birdtown-studios.akho.name/visits", {
                 method: 'POST',
                 body: JSON.stringify("game_over_4"),
             });
@@ -1117,7 +1117,7 @@ const TextNodes = [
     }, 
     {id:73,
         text: async () => {
-            const response = await fetch("https://birdtown-visit-counter.akho.name/visits", {
+            const response = await fetch("https://birdtown-studios.akho.name/visits", {
                 method: 'POST',
                 body: JSON.stringify("game_over_5"),
             });
@@ -1261,7 +1261,7 @@ const TextNodes = [
     }, 
     {id:84,
         text: async () => {
-            const response = await fetch("https://birdtown-visit-counter.akho.name/visits", {
+            const response = await fetch("https://birdtown-studios.akho.name/visits", {
                 method: 'POST',
                 body: JSON.stringify("game_over_6"),
             });
@@ -1279,7 +1279,7 @@ const TextNodes = [
     },
     {id:85,
         text: async () => {
-            const response = await fetch("https://birdtown-visit-counter.akho.name/visits", {
+            const response = await fetch("https://birdtown-studios.akho.name/visits", {
                 method: 'POST',
                 body: JSON.stringify("game_over_7"),
             });
@@ -1562,7 +1562,7 @@ const TextNodes = [
     }, 
     {id:106,
         text: async () => {
-            const response = await fetch("https://birdtown-visit-counter.akho.name/visits", {
+            const response = await fetch("https://birdtown-studios.akho.name/visits", {
                 method: 'POST',
                 body: JSON.stringify("game_over_8"),
             });
@@ -1580,7 +1580,7 @@ const TextNodes = [
     },
     {id:107,
         text: async () => {
-            const response = await fetch("https://birdtown-visit-counter.akho.name/visits", {
+            const response = await fetch("https://birdtown-studios.akho.name/visits", {
                 method: 'POST',
                 body: JSON.stringify("game_over_9"),
             });
@@ -1870,7 +1870,7 @@ const TextNodes = [
     },
     {id:130,
         text: async () => {
-            const response = await fetch("https://birdtown-visit-counter.akho.name/visits", {
+            const response = await fetch("https://birdtown-studios.akho.name/visits", {
                 method: 'POST',
                 body: JSON.stringify("game_over_10"),
             });
