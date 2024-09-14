@@ -47,7 +47,6 @@ body {
     font-size: 20px;
     font-family: 'Didot', 'Bodoni MT', 'Noto Serif Display', 'URW Palladio L', P052, Sylfaen,  serif;
     text-align: center;
-    /* display: flex; */
 }
 
 .btn-grid {
@@ -117,6 +116,6 @@ body {
   }
 
   .bg-image {
-    flex-direction: row;
+    flex-direction: column;
   }
 }
