@@ -16,7 +16,7 @@
     /* object-fit: cover; */
     /* object-position: 0 -100%; */
     display:flex;
-    width: 100lvw;
+    width: 100vw;
     height:auto;
     /* align-items:center; */
  }
@@ -36,7 +36,8 @@ body {
 
 .container {
     /* width: 900px; */
-    position: center;
+    justify-content: center;
+    align-items: center;
     width: auto;
     max-width: 80%;
     background-color: hsla(0, 0%, 96%, 0.815);
@@ -74,10 +75,10 @@ body {
 }
 
 .player-img {
-    height: 350px;
+    height: 320px;
     float: left;
     background-color: transparent;
-    margin: -175px 0 0 -150px;
+    margin: -175px 0 0 -120px;
     overflow: hidden;
  }
 
