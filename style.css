@@ -5,8 +5,8 @@
 .bg-image {
     /* object-fit: contain; */
     /* pointer-events: none; */
-    position: fixed;
-    /* position: absolute; */
+    /* position: fixed; */
+    position: absolute;
     z-index: -1;
     /* filter: blur(2px);
     -webkit-filter: blur(2px); */
@@ -94,19 +94,13 @@ body {
  }
  
  /* Maximum aspect ratio */
- /* @media (max-aspect-ratio: 8/5) {
+ @media (max-aspect-ratio: 8/5) {
   .bg-image {
     height: 100vh;
-    width: calc((8/5)*100vh);
-}
- } */
-
- @media (max-aspect-ratio: 9/16) {
-  .bg-image {
-    height: 100vh;
-    width: calc((9/16)*100vh);
+    width: calc((16/9)*100vh);
 }
  }
+
 
  @media (orientation: landscape) {
   body {
