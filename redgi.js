@@ -67,7 +67,7 @@ const TextNodes = [
         text: async () =>
             `Добро пожаловать в игру 'Птицбург'! На прохождение игры вам потребуется от 2 до 15 минут в зависимости от выбранного вами пути. У этой игры 10 концовок, поэтому крайне рекомендую пройти ее несколько раз по-разному!`,
         image: "location0.jpg",
-        player_image: "player1.png",
+        player_image: "player1.webp",
         options: [
             {
                 text: async () => "Понятно!",
@@ -80,7 +80,7 @@ const TextNodes = [
         text: async () =>
             "Храбрый, крайне амбициозный птиц по имени Реджинальд приехал в город, дабы поступить в Птицбургский Государственный Университет имени М.В.Канарейкина на программиста!",
         image: "location1.jpg",
-        player_image: "player1.png",
+        player_image: "player1.webp",
         options: [
             {
                 text: async () => "Начать игру!",
@@ -93,7 +93,7 @@ const TextNodes = [
         text: async () =>
             "Университет предоставил Реджи комнату на время сдачи вступительных испытаний. Реджинальд стал раскладывать свои птичьи вещички, как вдруг раздался стук в дверь. Наверное, это сосед по блоку.",
         image: "location2.jpg",
-        player_image: "player1.png",
+        player_image: "player1.webp",
         options: [
             {
                 text: async () => "Открыть дверь",
@@ -106,7 +106,7 @@ const TextNodes = [
         text: async () =>
             `Открыв дверь, Реджи увидел улыбающегося, веселого фламинго по имени Арчибальд. Арчибальд: «Привет, привет! Меня зовут Арчи, я с философского факультета. Рад знакомству. А тебя как зовут?»`,
         image: "location2.jpg",
-        player_image: "player2.png",
+        player_image: "player2.webp",
         options: [
             {
                 text: async () =>
@@ -120,7 +120,7 @@ const TextNodes = [
         text: async () =>
             `«Так ты совсем новичок в студенческой жизни! Ну ничего, бросай вещи и пойдем за мной, я отведу тебя в лучший птицклуб этого города!»`,
         image: "location2.jpg",
-        player_image: "player3.png",
+        player_image: "player3.webp",
         options: [
             {
                 text: async () => `Пойти с Арчи в клуб «Пташка»`,
@@ -138,7 +138,7 @@ const TextNodes = [
         text: async () =>
             `Арчи и Реджи приехали в клуб «Пташка» и начали свой птичий кутеж! Неожиданно Арчи наклонился к Реджи и прокричал ему на ухо: «Видишь того птица? В VIP зоне?»`,
         image: "location3.jpg",
-        player_image: "player4.png",
+        player_image: "player4.webp",
         options: [
             {
                 text: async () => "Посмотреть на птица в VIP зоне",
@@ -151,7 +151,7 @@ const TextNodes = [
         text: async () =>
             "«Голубя? Ну да, вижу, а что с ним?» — «Это Валентин, глава Люберецкой голубиной группировки. Я его немного знаю, очень крутой птиц. Пойдем познакомлю!»",
         image: "location3.jpg",
-        player_image: "player5.png",
+        player_image: "player5.webp",
         options: [
             {
                 text: async () => "«Давай! Почему нет!»",
@@ -168,7 +168,7 @@ const TextNodes = [
         text: async () =>
             "Арчи и Реджи поднялись в VIP-зону. За столом сидели очень опасные голуби и оживленно вели беседу за картами. Во главе стола восседал Валентин. Валентин внимательно посмотрел на Арчи и Реджи и махнул крылом своей охране, чтобы пташек пропустили",
         image: "location4.jpg",
-        player_image: "player6.png",
+        player_image: "player6.webp",
         options: [
             {
                 text: async () => "Подойти к Валентину",
@@ -181,7 +181,7 @@ const TextNodes = [
         text: async () =>
             "Арчи и Реджи присоединились к голубиной компании и начали беседу. Спустя какое-то время Реджи посмотрел на часы и обомлел, 8 утра, надо срочно бежать на экзамен!",
         image: "location4.jpg",
-        player_image: "player7.png",
+        player_image: "player7.webp",
         options: [
             {
                 text: async () => "Быстрее бежать на экзамен!",
@@ -194,7 +194,7 @@ const TextNodes = [
         text: async () =>
             "Реджи еще раз осмотрел свою комнату, после чего сел за стол, достал учебники и углубился в чтение. Когда на часах пробило 3 часа ночи, Реджи задумался: лечь ли ему спать или продолжить заниматься до самого упора?",
         image: "location2.jpg",
-        player_image: "player8.png",
+        player_image: "player8.webp",
         options: [
             {
                 text: async () => "Ботать до самого утра",
@@ -211,7 +211,7 @@ const TextNodes = [
         text: async () =>
             "Реджи успешно сдал все экзамены и получил комнату в общежитии и стипендию!",
         image: "location5.jpg",
-        player_image: "player1.png",
+        player_image: "player1.webp",
         options: [
             {
                 text: async () => "Ураааа! Лететь на пары!",
@@ -230,7 +230,7 @@ const TextNodes = [
         text: async () =>
             "Реджи задремал из-за усталости во время экзамена и с трудом сумел набрать вступительный балл. Но этих баллов не хватило на комнату в общежитии, и теперь Реджи необходимо найти подработку для съема жилья!",
         image: "location5.jpg",
-        player_image: "player1.png",
+        player_image: "player1.webp",
         options: [
             {
                 text: async () => "Искать подработку!",
@@ -247,7 +247,7 @@ const TextNodes = [
         text: async () =>
             "Реджи заснул на экзамене и провалил вступительные испытания в университет!",
         image: "location6.jpg",
-        player_image: "player9.png",
+        player_image: "player9.webp",
         options: [
             {
                 text: async () =>
@@ -271,7 +271,7 @@ const TextNodes = [
         text: async () =>
             "Реджи не успел вовремя прийти на экзамен и провалил вступительные испытания в университет!",
         image: "location6.jpg",
-        player_image: "player9.png",
+        player_image: "player9.webp",
         options: [
             {
                 text: async () =>
@@ -304,7 +304,7 @@ const TextNodes = [
             return `GAME OVER! Реджи вернулся в гнездо к своим родителям, отказавшись от мечты покорить Птицбург! Вы ${json}я птичка, прилетевшая на эту веточку Game Over!`;
         },
         image: "location10.jpg",
-        player_image: "player0.png",
+        player_image: "player0.webp",
         options: [
             {
                 text: async () => "Начать заново!",
