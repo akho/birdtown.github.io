@@ -1,5 +1,7 @@
 const textElement = document.getElementById("text");
 const optionButtonsElement = document.getElementById("option-buttons");
+const journeybgElement = document.getElementById("journey-bg")
+const topcardElement = document.getElementById("top-card")
 const backgroundMusic = new Audio("music1.mp3");
 
 var a = rand(11, 12);
@@ -31,7 +33,8 @@ async function showTextNode(textNodeIndex) {
         optionButtonsElement.removeChild(optionButtonsElement.firstChild);
     }
 
-    journey.src = textNode.image;
+    journeybgElement.src = textNode.image;
+    topcardElement.src = textNode.image;
     player.src = textNode.player_image;
 
     for (const option of textNode.options) {
