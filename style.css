@@ -85,7 +85,6 @@
         z-index: -50;
     }
 
-
     #container {
         flex-direction: row;
         position: fixed;
@@ -95,6 +94,7 @@
     }
 
     #player {
+        margin-top: -45px;
         max-height: 50vh;
         max-width: 20vw;
         z-index: 50;
