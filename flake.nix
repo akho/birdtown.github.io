@@ -8,7 +8,8 @@
     inputs.flake-utils.lib.eachDefaultSystem (system:
       let pkgs = (import (inputs.nixpkgs) { inherit system; });
       in {
-        devShell =
-          pkgs.mkShell { buildInputs = [ pkgs.nodePackages.prettier ]; };
+        devShell = pkgs.mkShell {
+          buildInputs = with pkgs; [ pkgs.nodePackages.prettier stylelint ];
+        };
       });
 }
