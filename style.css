@@ -148,13 +148,15 @@
     #container {
         border-radius: 15px;
         min-height: 0;
-        max-width: 70vw;
+        width: 80vw;
+        max-width: 70rem;
         margin-top: 10vh;
         height: auto;
     }
 
     #cards {
-        height: 40vh;
+        max-height: 40vh;
+        max-width: calc(min(80vw, 70rem) - 60px);
         width: auto;
         margin: -10vh 0 0 0;
     }
