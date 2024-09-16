@@ -6,6 +6,9 @@ const backgroundMusic = new Audio("music1.mp3");
 const muteLink = document.getElementById("mute");
 const muteImg = document.getElementById("mute-img");
 
+var currentLocationImage = "location0.jpg";
+const cardsStack = document.getElementById("cards")
+
 var a = rand(11, 12);
 var b = rand(13, 14);
 var c = rand(46, 47);
@@ -41,7 +44,15 @@ async function showTextNode(textNodeIndex) {
     }
 
     journeybgElement.src = textNode.image;
-    topcardElement.src = textNode.image;
+    if (currentLocationImage != textNode.image) {
+        currentLocationImage = textNode.image;
+        var cardDiv = document.createElement("div");
+        var locImg = document.createElement("img");
+        locImg.src = currentLocationImage;
+        cardDiv.appendChild(locImg);
+        cardsStack.appendChild(cardDiv)
+        cardDiv.style.setProperty("--rand", rand(-4, 4));
+    }
     player.src = textNode.player_image;
 
     for (const option of textNode.options) {
