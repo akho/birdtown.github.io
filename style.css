@@ -24,12 +24,12 @@
     left: -30px;
     top: -30px;
     filter: blur(30px) opacity(80%);
-    animation-name: appear-80;
+    animation-name: appear80;
     animation-duration: 0.4s;
     animation-timing-function: ease-in-out;
 }
 
-@keyframes appear-80 {
+@keyframes appear80 {
     from {
         opacity: 0;
     }
