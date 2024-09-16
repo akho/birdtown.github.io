@@ -3,6 +3,9 @@ const optionButtonsElement = document.getElementById("option-buttons");
 const journeybgElement = document.getElementById("journey-bg")
 const topcardElement = document.getElementById("top-card")
 var audioT = document.getElementById("music");
+const sndbtns = document.querySelector("#sndbtns");
+const icon = document.querySelector("#sndbtns > i");
+
 
 var a = rand(11, 12);
 var b = rand(13, 14);
@@ -12,22 +15,20 @@ var e = rand(59, 60);
 var f = rand(88, 89);
 
 let state = {};
-const sndbtns = document.querySelector("#sndbtns");
-const icon = document.querySelector("#sndbtns > i");
 
 sndbtns.addEventListener("click", () => {
-    if (audioT.paused) {
-        audioT.volume = 0.2;
-        audioT.loop = true;
-        audioT.play();
-      icon.classList.remove('fa-volume-up');
-      icon.classList.add('fa-volume-mute');    
-    } else {
-        audioT.pause();
-      icon.classList.remove('fa-volume-mute');
-      icon.classList.add('fa-volume-up');    
-    }
-  });
+if (audioT.paused) {
+    audioT.volume = 0.2;
+    audioT.loop = true;
+    audioT.play();
+    icon.classList.remove('fa-volume-mute');
+    icon.classList.add('fa-volume-up');    
+} else {
+    audioT.pause();
+    icon.classList.remove('fa-volume-up');
+    icon.classList.add('fa-volume-mute');    
+}
+});
 
 
 async function startGame() {
