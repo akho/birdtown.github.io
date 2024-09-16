@@ -60,12 +60,6 @@ async function showTextNode(textNodeIndex) {
             button.innerText = await option.text();
             button.classList.add("btn");
             button.addEventListener("click", () => selectOption(option));
-            audioT.play();
-            audioT.volume = 0.5;
-            audioT.loop = true;
-            // backgroundMusic.play();
-            // backgroundMusic.volume = 0.5;
-            // backgroundMusic.loop = true;
             optionButtonsElement.appendChild(button);
         }
     }
