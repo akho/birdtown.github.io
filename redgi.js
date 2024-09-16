@@ -2,7 +2,6 @@ const textElement = document.getElementById("text");
 const optionButtonsElement = document.getElementById("option-buttons");
 const journeybgElement = document.getElementById("journey-bg")
 const topcardElement = document.getElementById("top-card")
-// const backgroundMusic = new Audio("music1.mp3");
 var audioT = document.getElementById("music");
 
 var a = rand(11, 12);
@@ -13,10 +12,23 @@ var e = rand(59, 60);
 var f = rand(88, 89);
 
 let state = {};
+const sndbtns = document.querySelector("#sndbtns");
+const icon = document.querySelector("#sndbtns > i");
 
-function muteAudio() {
-    audioT.muted = !audioT.muted;
-}
+sndbtns.addEventListener("click", () => {
+    if (audioT.paused) {
+        audioT.volume = 0.2;
+        audioT.loop = true;
+        audioT.play();
+      icon.classList.remove('fa-volume-up');
+      icon.classList.add('fa-volume-mute');
+      
+    } else {
+        audioT.pause();
+      icon.classList.remove('fa-volume-mute');
+      icon.classList.add('fa-volume-up');
+    }
+  });
 
 async function startGame() {
     state = {};
