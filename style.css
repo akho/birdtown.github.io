@@ -35,9 +35,14 @@
     font-size: 24pt;
 }
 
-#front-buttons a {
+#mute {
     margin: 12pt;
     text-decoration: none;
+}
+
+#mute-img {
+    height: 20pt;
+    width: 20pt;
 }
 
 #container {

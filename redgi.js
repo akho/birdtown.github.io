@@ -4,6 +4,7 @@ const journeybgElement = document.getElementById("journey-bg")
 const topcardElement = document.getElementById("top-card")
 const backgroundMusic = new Audio("music1.mp3");
 const muteLink = document.getElementById("mute");
+const muteImg = document.getElementById("mute-img");
 
 var a = rand(11, 12);
 var b = rand(13, 14);
@@ -16,7 +17,7 @@ let state = {};
 
 function mute() {
     backgroundMusic.muted = !backgroundMusic.muted;
-    muteLink.innerText = backgroundMusic.muted ? "🔇" : "🔊";
+    muteImg.src = backgroundMusic.muted ? "soundoff.png" : "soundon.png";
 }
 
 async function startGame() {
@@ -1503,8 +1504,8 @@ const TextNodes = [
     {
         id: 87,
         text: async () =>
-            "Реджинальд высадил в конечной точке Щегола и поехал в сторону дома. Неожиданно ему пришел заказ и появилась необходимость развернуться. Можно ли выполнить тут разворот?",
-        image: "location25.jpg",
+            "Реджинальд высадил в конечной точке клиента и поехал в сторону дома. Неожиданно ему пришел заказ, и появилась необходимость развернуться. Можно ли выполнить тут разворот?",
+        image: "location25.JPG",
         player_image: "player1.webp",
         options: [
             {
@@ -1554,7 +1555,7 @@ const TextNodes = [
         ],
     },
     {
-        id: 89,
+        id: 90,
         text: async () =>
             "Реджи хорошо знал правила дорожного движения, поэтому не стал разворачиваться в этом месте! Какой умный птиц!",
         image: "location29.jpg",
