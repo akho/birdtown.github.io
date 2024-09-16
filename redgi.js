@@ -1,12 +1,12 @@
 const textElement = document.getElementById("text");
 const optionButtonsElement = document.getElementById("option-buttons");
-const journeybgElement = document.getElementById("journey-bg")
-const topcardElement = document.getElementById("top-card")
+const bgDiv = document.getElementById("bg-image");
+const cardsStack = document.getElementById("cards");
 var audioT = document.getElementById("music");
 const sndbtns = document.querySelector("#sndbtns");
 const icon = document.querySelector("#sndbtns > i");
 
-
+var currentLocationImage = "location0.jpg";
 var a = rand(11, 12);
 var b = rand(13, 14);
 var c = rand(46, 47);
@@ -30,8 +30,27 @@ if (audioT.paused) {
 }
 });
 
+function addLocationImage() {
+    var cardDiv = document.createElement("div");
+    var locImg = document.createElement("img");
+    locImg.src = currentLocationImage;
+    cardDiv.style.setProperty("--rand", rand(-4, 4));
+    cardDiv.appendChild(locImg);
+    cardsStack.appendChild(cardDiv);
+    var locImg2 = document.createElement("img");
+    locImg2.src = currentLocationImage;
+    bgDiv.appendChild(locImg2);
+}
 
 async function startGame() {
+    while (cardsStack.firstChild) {
+        cardsStack.removeChild(cardsStack.firstChild);
+    }
+    while (bgDiv.firstChild) {
+        bgDiv.removeChild(bgDiv.firstChild);
+    }
+    currentLocationImage = "location0.jpg";
+    addLocationImage()
     state = {};
     await showTextNode(1);
 }
@@ -51,8 +70,11 @@ async function showTextNode(textNodeIndex) {
         optionButtonsElement.removeChild(optionButtonsElement.firstChild);
     }
 
-    journeybgElement.src = textNode.image;
-    topcardElement.src = textNode.image;
+    if (currentLocationImage != textNode.image) {
+        currentLocationImage = textNode.image;
+        addLocationImage()
+    }
+    
     player.src = textNode.player_image;
 
     for (const option of textNode.options) {
