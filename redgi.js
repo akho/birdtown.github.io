@@ -21,14 +21,14 @@ sndbtns.addEventListener("click", () => {
         audioT.loop = true;
         audioT.play();
       icon.classList.remove('fa-volume-up');
-      icon.classList.add('fa-volume-mute');
-      
+      icon.classList.add('fa-volume-mute');    
     } else {
         audioT.pause();
       icon.classList.remove('fa-volume-mute');
-      icon.classList.add('fa-volume-up');
+      icon.classList.add('fa-volume-up');    
     }
   });
+
 
 async function startGame() {
     state = {};
