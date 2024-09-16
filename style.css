@@ -26,6 +26,20 @@
     filter: blur(30px) opacity(80%);
 }
 
+#front-buttons {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: auto;
+    font-size: 24pt;
+}
+
+#front-buttons a {
+    margin: 12pt;
+    text-decoration: none;
+}
+
 #container {
     height: auto;
     min-height: 100vh;

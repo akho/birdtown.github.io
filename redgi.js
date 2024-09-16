@@ -3,6 +3,7 @@ const optionButtonsElement = document.getElementById("option-buttons");
 const journeybgElement = document.getElementById("journey-bg")
 const topcardElement = document.getElementById("top-card")
 const backgroundMusic = new Audio("music1.mp3");
+const muteLink = document.getElementById("mute");
 
 var a = rand(11, 12);
 var b = rand(13, 14);
@@ -12,6 +13,11 @@ var e = rand(59, 60);
 var f = rand(88, 89);
 
 let state = {};
+
+function mute() {
+    backgroundMusic.muted = !backgroundMusic.muted;
+    muteLink.innerText = backgroundMusic.muted ? "🔇" : "🔊";
+}
 
 async function startGame() {
     state = {};
@@ -81,7 +87,7 @@ const TextNodes = [
     {
         id: 2,
         text: async () =>
-            "Храбрый, крайне амбициозный птиц по имени Реджинальд приехал в город, дабы поступить в Птицбургский Государственный Университет имени М.В.Канарейкина на программиста!",
+            "Храбрый, крайне амбициозный птиц по имени Реджинальд приехал в город, дабы поступить в Птицбургский Государственный Университет имени М. В. Канарейкина на программиста!",
         image: "location1.jpg",
         player_image: "player1.webp",
         options: [
