@@ -2,7 +2,8 @@ const textElement = document.getElementById("text");
 const optionButtonsElement = document.getElementById("option-buttons");
 const journeybgElement = document.getElementById("journey-bg")
 const topcardElement = document.getElementById("top-card")
-const backgroundMusic = new Audio("music1.mp3");
+// const backgroundMusic = new Audio("music1.mp3");
+var audioT = document.getElementById("music");
 
 var a = rand(11, 12);
 var b = rand(13, 14);
@@ -12,6 +13,10 @@ var e = rand(59, 60);
 var f = rand(88, 89);
 
 let state = {};
+
+function muteAudio() {
+    audioT.muted = !audioT.muted;
+}
 
 async function startGame() {
     state = {};
@@ -43,9 +48,12 @@ async function showTextNode(textNodeIndex) {
             button.innerText = await option.text();
             button.classList.add("btn");
             button.addEventListener("click", () => selectOption(option));
-            backgroundMusic.play();
-            backgroundMusic.volume = 0.5;
-            backgroundMusic.loop = true;
+            audioT.play();
+            audioT.volume = 0.5;
+            audioT.loop = true;
+            // backgroundMusic.play();
+            // backgroundMusic.volume = 0.5;
+            // backgroundMusic.loop = true;
             optionButtonsElement.appendChild(button);
         }
     }
