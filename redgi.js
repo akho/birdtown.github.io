@@ -53,8 +53,8 @@ async function startGame() {
         }
         currentLocationImage = "location0.jpg";
         addLocationImage();
-        firstRun = false;
     }
+    firstRun = false;
     state = {};
     await showTextNode(1);
 }
