@@ -17,17 +17,17 @@ var f = rand(88, 89);
 let state = {};
 
 sndbtns.addEventListener("click", () => {
-if (audioT.paused) {
-    audioT.volume = 0.2;
-    audioT.loop = true;
-    audioT.play();
-    icon.classList.remove('fa-volume-mute');
-    icon.classList.add('fa-volume-up');    
-} else {
-    audioT.pause();
-    icon.classList.remove('fa-volume-up');
-    icon.classList.add('fa-volume-mute');    
-}
+    if (audioT.paused) {
+        audioT.volume = 0.2;
+        audioT.loop = true;
+        audioT.play();
+        icon.classList.remove("fa-volume-mute");
+        icon.classList.add("fa-volume-up");
+    } else {
+        audioT.pause();
+        icon.classList.remove("fa-volume-up");
+        icon.classList.add("fa-volume-mute");
+    }
 });
 
 function addLocationImage() {
@@ -72,9 +72,9 @@ async function showTextNode(textNodeIndex) {
 
     if (currentLocationImage != textNode.image) {
         currentLocationImage = textNode.image;
-        addLocationImage()
+        addLocationImage();
     }
-    
+
     player.src = textNode.player_image;
 
     for (const option of textNode.options) {
