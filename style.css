@@ -45,7 +45,9 @@
     bottom: 0;
     right: 0;
     width: 50px;
-    padding: 15px;
+    height:50px;
+    font-size: large;
+    padding: 10px;
     border: none;
     border-radius: 2px;
     outline: none;
@@ -62,8 +64,11 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
-    font-family: "Didot", "Bodoni MT", "Noto Serif Display", "URW Palladio L",
-        P052, Sylfaen, serif;
+    /* font-family: "Didot", "Bodoni MT", "Noto Serif Display", "URW Palladio L",
+        P052, Sylfaen, serif; */
+    font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+    /* font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif; */
+    /* font-family: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif; */
     font-size: 15pt;
     align-items: center;
     justify-content: flex-start;
@@ -128,8 +133,11 @@
     color: white;
     outline: none;
     font-size: 13pt;
-    font-family: "Didot", "Bodoni MT", "Noto Serif Display", "URW Palladio L",
-        P052, Sylfaen, serif;
+    /* font-family: "Didot", "Bodoni MT", "Noto Serif Display", "URW Palladio L",
+        P052, Sylfaen, serif; */
+    font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+    /* font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif; */
+    /* font-family: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif; */
     width: 100%;
 }
 
