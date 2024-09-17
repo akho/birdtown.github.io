@@ -6,6 +6,7 @@ var audioT = document.getElementById("music");
 const sndbtns = document.querySelector("#sndbtns");
 const icon = document.querySelector("#sndbtns > i");
 
+var firstRun = true;
 var currentLocationImage = "location0.jpg";
 var a = rand(11, 12);
 var b = rand(13, 14);
@@ -43,14 +44,17 @@ function addLocationImage() {
 }
 
 async function startGame() {
-    while (cardsStack.firstChild) {
-        cardsStack.removeChild(cardsStack.firstChild);
+    if (!firstRun) {
+        while (cardsStack.firstChild) {
+            cardsStack.removeChild(cardsStack.firstChild);
+        }
+        while (bgDiv.firstChild) {
+            bgDiv.removeChild(bgDiv.firstChild);
+        }
+        currentLocationImage = "location0.jpg";
+        addLocationImage();
+        firstRun = false;
     }
-    while (bgDiv.firstChild) {
-        bgDiv.removeChild(bgDiv.firstChild);
-    }
-    currentLocationImage = "location0.jpg";
-    addLocationImage()
     state = {};
     await showTextNode(1);
 }
