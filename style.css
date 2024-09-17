@@ -24,7 +24,7 @@
     position: absolute;
     left: calc(-1px * var(--blur));
     top: calc(-1px * var(--blur));
-    filter: blur(calc(var(--blur) * 1px)) opacity(40%);
+    filter: blur(calc(var(--blur) * 1px)) opacity(27%);
     animation-name: appear80;
     animation-duration: 0.4s;
     animation-timing-function: ease-in-out;
