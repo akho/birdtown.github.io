@@ -18,12 +18,13 @@
 }
 
 #bg-image > img {
-    width: calc(100vw + 60px);
-    height: calc(100vh + 60px);
+    --blur: 30;
+    width: calc(100vw + 2 * var(--blur) * 1px);
+    height: calc(100vh + 2 * var(--blur) * 1px);
     position: absolute;
-    left: -30px;
-    top: -30px;
-    filter: blur(30px) opacity(80%);
+    left: calc(-1px * var(--blur));
+    top: calc(-1px * var(--blur));
+    filter: blur(calc(var(--blur) * 1px)) opacity(40%);
     animation-name: appear80;
     animation-duration: 0.4s;
     animation-timing-function: ease-in-out;
@@ -41,8 +42,8 @@
 #sndbtns {
     color: #eee;
     position: fixed;
-    bottom:0;
-    right:0;
+    bottom: 0;
+    right: 0;
     width: 50px;
     padding: 15px;
     border: none;
@@ -56,7 +57,7 @@
 }
 
 #container {
-    height: auto;
+    height: 100%;
     min-height: 100vh;
     width: 100vw;
     display: flex;
@@ -64,7 +65,6 @@
     font-family: "Didot", "Bodoni MT", "Noto Serif Display", "URW Palladio L",
         P052, Sylfaen, serif;
     font-size: 15pt;
-    background: hsla(0, 0%, 96%, 0.45);
     align-items: center;
     justify-content: flex-start;
 }
@@ -74,6 +74,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#cards {
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 #cards > div {
@@ -91,6 +97,9 @@
 }
 
 #player {
+    position: sticky;
+    top: 30vw;
+    left: 10px;
     max-width: 80vw;
     max-height: 50vw;
     margin-top: -100px;
@@ -126,16 +135,20 @@
 
 @media (min-width: 600px) and (max-height: 550px) {
     /* Landscape phone */
+    #bg-image > img {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 0;
+        filter: none;
+        animation-name: appear80;
+        animation-duration: 0.4s;
+        animation-timing-function: ease-in-out;
+    }
 
     #cards {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100vh;
-        z-index: -50;
-        display: flex;
-        align-items: center;
+        display: none;
     }
 
     #container {
@@ -143,26 +156,30 @@
         height: 100vh;
         width: 100vw;
         background: none;
+        backdrop-filter: none;
     }
 
     #inner-container {
-        background: hsla(0, 0%, 96%, 0.82);
+        background: hsla(0, 0%, 96%, 0.5);
         display: flex;
+        width: 100vw;
         flex-direction: row;
         align-items: flex-start;
+        justify-content: flex-end;
         margin-top: 50px;
+        backdrop-filter: blur(20px);
     }
 
     #player {
-        margin-top: -30px;
-        max-height: 50vh;
+        position: sticky;
+        top: 20px;
+        max-height: 8em;
         max-width: 20vw;
-        margin-left: 20px;
     }
 
     #gameplay {
         display: flex;
-        width: 100%;
+        width: calc(80vw);
         height: auto;
         margin: 0;
         justify-content: center;
@@ -181,7 +198,13 @@
         width: 100vw;
     }
 
+    #bg-image > img {
+        --blur: 10;
+        filter: blur(calc(var(--blur) * 1px)) opacity(90%);
+    }
+
     #container {
+        background: hsla(0, 0%, 96%, 0.45);
         border-radius: 15px;
         min-height: 0;
         width: 80vw;
@@ -190,9 +213,11 @@
         margin-bottom: 10vh;
         height: auto;
         z-index: 5;
+        backdrop-filter: blur(30px);
     }
 
     #cards {
+        position: static;
         /* max-height: 40vh; */
         height: calc(min(80vw, 70rem) / 2);
         width: calc(min(80vw, 70rem) - 60px);
@@ -204,7 +229,7 @@
         display: block;
         width: calc(min(80vw, 70rem) - 60px);
         position: absolute;
-        border: 1px solid black;
+        border: 1px solid rgba(0, 0, 0, 30%);
         background: white;
         padding: 10px;
         --rand: 0;
@@ -237,9 +262,10 @@
     }
 
     #player {
-        height: calc(min(30vh,20rem));
+        position: static;
+        height: calc(min(30vh, 20rem));
         width: auto;
-        margin-top: -15vh;
+        margin-top: calc(-min(30vh, 20rem) / 5);
         z-index: 50;
     }
 
@@ -249,5 +275,9 @@
         padding: 50px;
         margin-top: 0;
         z-index: 40;
+    }
+
+    #option-buttons {
+        margin-top: 2em;
     }
 }
