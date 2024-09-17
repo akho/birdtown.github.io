@@ -51,10 +51,9 @@ async function startGame() {
         while (bgDiv.firstChild) {
             bgDiv.removeChild(bgDiv.firstChild);
         }
-        currentLocationImage = "location0.jpg";
-        addLocationImage();
-        firstRun = false;
+        currentLocationImage = "";
     }
+    firstRun = false;
     state = {};
     await showTextNode(1);
 }
